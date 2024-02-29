@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/send.css">
+    <title>زرین پال من</title>
+</head>
+<body>
+    <div class="box">
+        <img src="styles/Capture.PNG">
+        <h2> تایید </h2>
+        <div class="text">
+          <p>
+            <button class="edit">
+                ویرایش شماره
+            </button>
+            رمز یکبار مصرف 
+             <span class="verifaynum">09383401383</span>
+            پیامک شد
+          </p>
+        </div>
+        <form id="form">
+            <div class="fi">
+                <input type="text" maxlength="1" pattern="[0-9]{1}" required/>
+                <input type="text" maxlength="1" pattern="[0-9]{1}" required/>
+                <input type="text" maxlength="1" pattern="[0-9]{1}" required/>
+                <input type="text" maxlength="1" pattern="[0-9]{1}" required/>
+                <input type="text" maxlength="1" pattern="[0-9]{1}" required/>
+                <input type="text" maxlength="1" pattern="[0-9]{1}" required/>
+            </div>
+            <div class="se">
+
+            </div>
+            <div class="th"></div>
+            <div class="button">
+                <input type="submit" value="تایید و ادامه">
+                <span id="resend">ارسال مجدد کد</span>
+                <progress id="timepro" value="100" max="100"></progress>
+            </div>
+        </form>
+       
+     </div>
+     <script src="styles/butt.js">
+        let t = 0 ,
+        m,
+        s,
+        timerInterval;
+
+        const starttimer = () => {
+            t= 15000;
+            const resend = document.querySelector("#resend");
+            resend.innerText = '${getTime()} تا ارسال مجدد';
+        };
+
+        const getTime() =>{
+            return "00:15";
+        };
+        starttimer();
+     </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body{
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+}
+.box{
+    margin-top: 4%;
+    background: #ffffff;
+    width: 28%;
+    height: 600px;
+    border-radius: 15px;
+    padding: 20px;
+}
+.box img{
+    margin-top: 10px;
+    float: right;
+    width: 30%;
+}
+h2{
+    text-align: right;
+    margin: 100px 10px 40px 60px;
+    font-weight: bold;
+    font-family: system-ui;
+}
+.text p{
+    text-align: right;  
+    font-family: system-ui;
+}
+.edit{
+    background: #ffffff;
+    font-family: system-ui;
+    font-weight: bold;
+    color: #187ff7;
+}
+.fi{
+    margin-left: 11%;
+}
+.fi input{
+    margin: 3px;
+    border: solid 2px #93989c;
+    width: 45px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.fi input:hover{
+    color: #000;
+}
+.button input{
+    font-family: system-ui;
+    background: #ffe53b;
+    box-shadow: 0 6px 20px 0 rgba(255,237,0,.39);
+    padding: 10px;
+    border-radius: 25px;
+    margin-top: 40px;
+    font-size: 15px;
+    width: 35%;
+    color: #000;
+    text-align: center;
+    margin-left: 10%;
+}
+.button input:hover{
+    box-shadow: none;
+    cursor: pointer;
+}
+#timepro{
+    height: 5px;
+    margin-left: 20px;
+    color: #ffe53b;
+}
